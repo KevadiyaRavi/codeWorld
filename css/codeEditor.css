@@ -9,7 +9,7 @@ main .titleBar {
   gap: 2px;
 }
 
-main .titleBar h1 {
+main .titleBar #title {
   font-weight: bolder;
   margin-bottom: 0;
 }
