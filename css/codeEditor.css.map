@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CAWjB;;AAbD,AAGI,IAHA,CAGA,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,GAAG,EAAE,GAAG;CAKX;;AAXL,AAOQ,IAPJ,CAGA,SAAS,CAIL,EAAE,CAAA;EACE,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,CAAC;CACnB",
     "sources": [
-        "codePreview.scss"
+        "codeEditor.scss"
     ],
     "names": [],
-    "file": "codePreview.css"
+    "file": "codeEditor.css"
 }
