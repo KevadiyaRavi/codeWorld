@@ -1,0 +1,28 @@
+main{
+    width: 100%;
+    margin: auto;
+   .block{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: fit-content;
+    .tt{
+        font-size: 20px;
+    }
+    .list{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        li{
+            a{
+                color:#00ea08;
+                font-weight: 700;
+            }
+            a:hover{
+                color: black;
+            }
+        }
+    }
+}
+}

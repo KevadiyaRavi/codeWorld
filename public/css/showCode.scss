@@ -1,0 +1,14 @@
+main{
+    width: 80%;
+    margin: 0 auto;
+    .titleBar{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        h1{
+            font-weight: bolder;
+            margin-bottom: 0;
+        }
+    }
+    
+}

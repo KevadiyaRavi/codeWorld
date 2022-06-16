@@ -1,0 +1,41 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text{
+    padding: 5px 10px;
+    border-radius: 0;
+    border: 1px solid black;
+    outline: 1px solid black;
+}
+.textarea{
+    padding: 0;
+    margin: 0;
+}
+table{
+    margin: auto;
+    border: 1px solid black;
+    td{
+        padding: 10px 25px;
+        button{
+            padding: 5px 15px;
+            font-weight: 800;
+        }
+       
+    }
+}
+.map{
+    position: absolute;
+    list-style: decimal;
+    top: 100px;
+    margin-left: 2rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h2{
+        border-bottom: 2px solid black;
+    }
+}

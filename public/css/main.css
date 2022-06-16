@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+
+nav {
+  display: flex;
+  margin: 0px 0;
+  padding: 15px 30px;
+  justify-content: space-around;
+  background-color: #FFCC4A;
+  border-bottom: 2px solid;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .logo .rect {
+  width: 120px;
+  height: 35px;
+  background: linear-gradient(to right, #c5ffd3, #07C837);
+  border-radius: 50px;
+}
+
+nav .logo .title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 15px;
+}
+/*# sourceMappingURL=main.css.map */

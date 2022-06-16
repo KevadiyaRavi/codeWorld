@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Preview</title>
+
+    <link rel="stylesheet" href="/css/codeEditor.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+
+    <link rel=stylesheet href="/public/doc/docs.css">
+    <link rel="stylesheet" href="/public/lib/codemirror.css">
+    <link rel="stylesheet" href="/public/addon/dialog/dialog.css">
+    <script src="/public/lib/codemirror.js"></script>
+    <script src="/public/mode/clike/clike.js"></script>
+    <script src="/public/keymap/emacs.js"></script>
+    <script src="/public/addon/edit/matchbrackets.js"></script>
+    <script src="/public/addon/comment/comment.js"></script>
+    <script src="/public/addon/dialog/dialog.js"></script>
+    <script src="/public/addon/search/searchcursor.js"></script>
+    <script src="/public/addon/search/search.js"></script>
+
+    <script src="/js/codeRender.js" defer></script>
+
+    <style>
+        .CodeMirror {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="title1">
+            <a href="/index.html" class="title">CWorld</a>
+        </div>
+
+    </nav>
+    <main>
+        <h2 id="title">Swapping two number of code</h2>
+        <form><textarea id="code" name="code">
+#include<stdio.h>
+main(){
+    printf("Hello");
+}
+</textarea></form>
+    </main>
+
+
+
+    <script>
+        // CodeMirror.commands.save = function () {
+        //     var elt = editor.getWrapperElement();
+        //     elt.style.background = "#def";
+        //     setTimeout(function () { elt.style.background = ""; }, 300);
+        // };
+        // var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        //     lineNumbers: true,
+        //     mode: "text/x-csrc",
+        //     matchBrackets: true,
+        //     keyMap: "emacs",
+        //     readOnly: "false"
+        // });
+    </script>
+</body>
+
+</html>

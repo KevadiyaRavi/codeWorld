@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="lib/codemirror.css">
+    <link rel=stylesheet href="doc/docs.css">
+    <script src="lib/codemirror.js"></script>
+    <script src="mode/xml/xml.js"></script>
+    <script src="mode/javascript/javascript.js"></script>
+    <script src="mode/css/css.js"></script>
+    <script src="mode/htmlmixed/htmlmixed.js"></script>
+    <script src="addon/edit/matchbrackets.js"></script>
+
+    <script src="doc/activebookmark.js"></script>
+</head>
+
+<body>
+    <textarea name="text" id="text" cols="30" rows="10">
+        #incldue<stdio.h>
+    </textarea>
+</body>
+<script>
+    var editor = CodeMirror.fromTextArea(text, {
+        lineNumbers: true,
+        mode: "text/x-csrc",
+
+    });
+</script>
+
+</html>
