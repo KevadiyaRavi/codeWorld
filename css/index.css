@@ -1,1 +1,260 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main h2 {
+  border-bottom: 2px solid;
+}
+
+main .programListContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+main .programListContainer .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+main .programListContainer .card .title {
+  font-size: 18px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #293232;
+  width: 100%;
+  padding: 10px 0;
+}
+
+main .programListContainer .card .title span {
+  color: white;
+  padding: 10px 10px;
+}
+
+main .programListContainer .card .list {
+  list-style: decimal;
+  padding: 10px 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main .programListContainer .card .list li a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #282424;
+  font-weight: bold;
+}
+
+main .programListContainer .card .list li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+  transform: scaleX(0%);
+  transform-origin: left;
+}
+
+main .programListContainer .card .list li a:hover {
+  color: black;
+}
+
+main .programListContainer .card .list li a:hover::after {
+  animation: hoverAnimation 0.5s forwards;
+}
+
+@keyframes hoverAnimation {
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.card a {
+  color: #bf0222;
+}
+
+@supports (backdrop-filter: none) {
+  .card {
+    backdrop-filter: blur(-20px);
+    background-color: rgba(255, 255, 255, 0.334);
+  }
+  .warning {
+    display: none;
+  }
+}
+
+.area {
+  transform: rotateZ(180deg);
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  animation: AnimateBG 20s ease infinite;
+  width: 100%;
+  height: 150vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+  left: 5%;
+  width: 350px;
+  height: 350px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.bg {
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
