@@ -530,4 +530,6 @@ var txtcode = document.getElementById('code')
 var title = document.getElementById('title')
 var data = database[`${renderId}`]
 title.innerText = data.title
+document.querySelector('title').innerText = `${data.title}`
+
 editor.getDoc().setValue(data.code);

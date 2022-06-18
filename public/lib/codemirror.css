@@ -8,6 +8,7 @@
   color: black;
   direction: ltr;
   font-weight: 600;
+  background: #d6d6d663;
 }
 
 /* PADDING */
@@ -253,7 +254,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .CodeMirror {
   position: relative;
   overflow: hidden;
-  background: white;
+  /* background: white; */
+  background: #ffffff8c;
 }
 
 .CodeMirror-scroll {
@@ -312,6 +314,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   top: 0;
   min-height: 100%;
   z-index: 3;
+  background: #ffffff8c;
 }
 .CodeMirror-gutter {
   white-space: normal;
@@ -319,6 +322,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   display: inline-block;
   vertical-align: top;
   margin-bottom: -50px;
+  background: #ffffff8c;
 }
 .CodeMirror-gutter-wrapper {
   position: absolute;
