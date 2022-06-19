@@ -175,15 +175,107 @@ var database = {
         `
     },
     5: {
-        title: "",
+        title: "Find sum of all element from int array",
         code:
-            `
+            `#include <stdio.h>
+            #include <math.h>
+            int main()
+            {
+                int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+                int size = sizeof(array) / sizeof(array[0]);
+                int sum = 0;
+                for (int i = 0; i < size; i++)
+                {
+                    sum += array[i];
+                }
+                printf("Sum of all numbers from array = %d", sum);
+            }
+        `
+    },
+    6: {
+        title: "Sort an integer array(Bubble sort)",
+        code: `
+        #include <stdio.h>
+        #include <stdlib.h>
+        int main()
+        {
+            int array[] = {2, 4, 3, 5, 6, 4, 3, 2, 7};
+            int size = sizeof(array) / sizeof(int);
+            for (int i = 1; i < size; i++)
+            {
+                for (int j = 0; j < size - i; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        int t = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = t;
+                    }
+                }
+            }
+            for (int i = 0; i < size; i++)
+            {
+                printf("%d ", array[i]);
+            }
+        }
+        `
+    },
+    7: {
+        title: "Sort an integer array(Selection Sort)",
+        code: `        #include <stdio.h>
+        #include <stdlib.h>
+        int main()
+        {
+            int array[] = {2, 4, 3, 5, 6, 4, 3, 2, 7};
+            int size = sizeof(array) / sizeof(int);
+            for (int i = 1; i < size - 1; i++)
+            {
+                for (int j = i + 1; j < size; j++)
+                {
+                    if (array[j] < array[i])
+                    {
+                        int t = array[j];
+                        array[j] = array[i];
+                        array[i] = t;
+                    }
+                }
+            }
+            for (int i = 0; i < size; i++)
+            {
+                printf("%d ", array[i]);
+            }
+        }
+        `
+    },
+    8: {
+        title: "Find max and min from integer array",
+        code: `#include <stdio.h>
+        int main()
+        {
+            int array[] = {2, 4, 3, 5, 6, 4, 3, 2, 7};
+            int size = sizeof(array) / sizeof(int);
+            for (int i = 1; i < size - 1; i++)
+            {
+                for (int j = i + 1; j < size; j++)
+                {
+                    if (array[j] < array[i])
+                    {
+                        int t = array[j];
+                        array[j] = array[i];
+                        array[i] = t;
+                    }
+                }
+            }
+            int max = array[size - 1];
+            int min = array[0];
+            printf("max = %d \\nmin = %d", max, min);
+        }
         `
     },
     x: {
         title: "",
-        code:
-            'hello'
+        code: `
+        `
     },
 }
 //end of database variable

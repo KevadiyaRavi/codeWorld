@@ -253,7 +253,7 @@ var database = {
                     else
                         printf(" ");
                 }
-                printf("\   \n");
+                printf("\\n");
             }
         }
         `
