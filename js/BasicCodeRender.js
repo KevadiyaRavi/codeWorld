@@ -523,6 +523,37 @@ main() {
             }
 `,
     },
+    24: {
+        title: "WAP to find that given number is palindrome or not",
+        code: `        #include <stdio.h>
+        #include <stdlib.h>
+        int main()
+        {
+            int n = 123211;
+            int flag = 1;
+        
+            while (n != 0)
+            {
+                int numDigit = floor(log10(n) + 1);
+                int x = n / ((int)pow(10, numDigit - 1));
+                int y = n % 10;
+                if (x == y)
+                    flag = 1;
+                else
+                {
+                    flag = 0;
+                    break;
+                }
+                n %= (int)pow(10, numDigit - 1);
+                n /= 10;
+            }
+            if (flag == 1)
+                printf("Number is Palindrome");
+            else
+                printf("Number is not palindrome");
+        }
+        `
+    }
 }
 //end of database variable
 var renderId = localStorage.getItem('urlName')
@@ -533,3 +564,4 @@ title.innerText = data.title
 document.querySelector('title').innerText = `${data.title}`
 
 editor.getDoc().setValue(data.code);
+

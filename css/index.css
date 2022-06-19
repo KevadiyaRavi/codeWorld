@@ -64,6 +64,7 @@ main .programListContainer .card .list li a {
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 main .programListContainer .card .list li a::after {

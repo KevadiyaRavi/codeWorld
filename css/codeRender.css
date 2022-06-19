@@ -1,3 +1,4 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
 main {
   width: 80%;
   margin: 0 auto;
@@ -14,6 +15,17 @@ main {
 .CodeMirror {
   border: 2px solid;
   border-radius: 10px;
+}
+
+.copyIcon {
+  position: relative;
+  top: 31px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .bg {
