@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #1B1F24;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  margin: 20px auto;
+}
+
+nav .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .title span {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+main .intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+main .intro .t1 {
+  color: gray;
+  font-weight: 600;
+}
+
+main .intro .t2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main .codeNumber {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+main .codeNumber #totalCodes {
+  border-bottom: 4px solid #88FF4A;
+  width: fit-content;
+  text-align: center;
+  font-size: 55px;
+  font-weight: 800;
+  width: 150px;
+  color: #7D4AFF;
+}
+
+main .codeNumber .txt {
+  color: #FF664A;
+}
+
+main .card-container {
+  height: fit-content;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+main .card-container .card {
+  width: 150px;
+  background-color: var(--bgcolor);
+  padding: 1rem 2rem;
+  color: black;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+/*# sourceMappingURL=home.css.map */
