@@ -15,6 +15,8 @@ nav {
   width: 80%;
   display: flex;
   margin: 20px auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav .title {
@@ -23,10 +25,47 @@ nav .title {
   gap: 10px;
 }
 
+nav .title a {
+  text-decoration: none;
+}
+
 nav .title span {
   color: white;
   font-size: 22px;
   font-weight: 600;
+}
+
+nav .title .nav-title-sub {
+  color: var(--titleColor);
+}
+
+nav .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .social span.s1 {
+  font-size: 14px;
+}
+
+nav .social span.s2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #88FF4A;
+}
+
+nav .social a {
+  width: fit-content;
+  height: 100%;
+}
+
+nav .social a img {
+  filter: hue-rotate(285deg);
+}
+
+nav .social a img:hover {
+  filter: hue-rotate(24deg);
 }
 
 main {
@@ -95,5 +134,89 @@ main .card-container .card {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
+}
+
+main .card-container .card span {
+  color: black;
+  position: relative;
+}
+
+main .card-container .card span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5s ease;
+}
+
+main .card-container .card:hover span::after {
+  transform: scaleX(1);
+}
+
+.code-list {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 2rem 0;
+}
+
+.code-list .title {
+  color: var(--txtColor);
+}
+
+.code-list .list {
+  list-style: decimal;
+  padding: 10px 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.code-list .list li a {
+  width: fit-content;
+  height: 100%;
+  position: relative;
+  color: #e0e0e0;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.code-list .list li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid;
+  border-bottom-color: #FDC799;
+  transform: scaleX(0%);
+  transform-origin: left;
+  transition: all 0.2s ease-in-out;
+}
+
+.code-list .list li a:hover {
+  color: white;
+}
+
+.code-list .list li a:hover::after {
+  transform: scaleX(100%);
+}
+
+.patternList li {
+  width: 250px;
 }
 /*# sourceMappingURL=home.css.map */
