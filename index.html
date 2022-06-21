@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CWorld</title>
     <link rel="stylesheet" href="css/home.css">
+
 </head>
 
 <body>
@@ -32,9 +33,13 @@
             <span class="t2">What are you looking upto?</span>
         </div>
         <div class="codeNumber">
-            <span id="totalCodes">24</span>
+            <span id="totalCodes" count="47">0</span>
             <span class="txt">Examples</span>
         </div>
+        <script>
+
+
+        </script>
         <div class="card-container">
             <a href="basic-main.html" class="card" style="--bgcolor:#4A9FFF">
                 <span>Basic Programs</span>
@@ -52,5 +57,15 @@
         </div>
     </main>
 </body>
+<script>
+    console.log(totalCodes.getAttribute('count'))
+    var count = 0
+    setInterval(() => {
+        if (count <= totalCodes.getAttribute('count'))
+            totalCodes.innerText = `${count++}`
+        else
+            clearInterval(this)
+    }, 20);
+</script>
 
 </html>
