@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     // border: 1px solid;
-    color: rgb(255, 255, 255);
+    // color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -42,6 +42,7 @@ nav{
         gap: 20px;
         span.s1{
             font-size: 14px;
+            color: white;
         }
         span.s2{
             font-size: 18px;
@@ -83,6 +84,7 @@ main{
         .t2{
             font-size: 30px;
             font-weight: 700;
+            color: white;
         }
     }
     .codeNumber{
@@ -165,6 +167,7 @@ main{
         gap: 15px;
         font-weight: 400;
         margin-left: 1rem;
+        color: white;
         li{
          
           a{
@@ -208,3 +211,45 @@ main{
       width: 250px;
     }
   }
+
+
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+.codeRender{
+    color: gray;
+}
+.codedisplay{
+    width: 80%;
+    margin: 0 auto;
+    height: fit-content;
+    padding: 2rem 0;
+    color: gray;
+}
+@media (max-width:500px) {
+  .codedisplay{
+    width: 90%;
+  }
+}
+.CodeMirror {
+    border:2px solid;
+    border-radius: 10px;
+   
+}
+.copyIcon{
+    position: relative;
+    top: 31px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 10;
+    cursor: pointer;
+}
+@media (max-width:650px) {
+    nav{
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+    }
+}
+  

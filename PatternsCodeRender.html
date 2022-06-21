@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Preview</title>
+    <link rel="stylesheet" href="css/home.css">
 
-    <link rel="stylesheet" href="css/codeRender.css">
-    <link rel="stylesheet" href="css/navbar.css">
 
 
     <link rel=stylesheet href="public/doc/docs.css">
@@ -25,20 +24,36 @@
     <script src="js/PatternsCodeRender.js" defer></script>
 
     <style>
-
+        body {
+            background-color: #1B1F24;
+        }
     </style>
 
 
 </head>
 
-<body class="bg">
+<body class="codeRender">
+
     <nav>
-        <div class="title1">
-            <a href="index.html" class="title">CWorld</a>
+        <div class="title">
+            <img src="images/Group.png" alt="" width="35">
+            <a href="index.html"> <span>CWorld</span></a>
+            &nbsp;
+            <!-- <span style="font-size: 15px;font-weight: 400;color:#00C39A">/Basic program</span> -->
+        </div>
+        <div class="social">
+            <div>
+                <span class="s1">Developed By</span>
+                <span class="s2"> Ravi Kevadiya</span>
+            </div>
+            <a href="https://github.com/KevadiyaRavi/codeWorld" target="_blank">
+                <img src="images/iconmonstr-github-1-240.png" alt="" width="24">
+            </a>
         </div>
     </nav>
 
-    <main>
+    <div class="codedisplay">
+
         <h2 id="title" style="font-weight: 800;">Swapping two number of code</h2>
         <form><textarea id="code" name="code">
 #include<stdio.h>
@@ -46,7 +61,7 @@ main(){
     printf("Hello");
 }
 </textarea></form>
-    </main>
+    </div>
 
 
 
